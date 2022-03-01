@@ -132,7 +132,7 @@ export class ParameterTabsGroupC extends React.Component<Props & InjectedProps, 
             return <Tab 
                     key={"tab_" + param.id} 
                     id={param.label} 
-                    title={param.label} 
+                    title={param.label?.replace("/project1/", "")} 
                     panel={<div>
                             <div className="inner" style={{
                                 border: "1px solid #454545",

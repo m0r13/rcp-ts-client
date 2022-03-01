@@ -20,7 +20,7 @@ export class ParameterFoldableGroupC extends React.Component<Props & InjectedPro
         super(props);
     
         this.state = {
-            isOpen: false,
+            isOpen: true,
         };
     } 
 

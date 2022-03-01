@@ -29,12 +29,12 @@ export default class ConnectionDialog extends React.Component<Props, State> {
 
         this.state = {
             isConnected: false,
-            host: 'localhost',
+            host: window.location.hostname, // 'localhost',
             port: 10000,
             parameters: [],
             serverVersion: "",
             serverApplicationId: "",
-            rootWithTabs: false,
+            rootWithTabs: true,
         };
     }
 
